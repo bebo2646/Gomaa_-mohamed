@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/turn.js@4.1.0/lib/turn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/turn.js@1.0.5/index.js"></script>
 </head>
 <body>
 
@@ -18,7 +18,7 @@
                     <h1 class="gold-text title-large">نظرية فيثاغورث</h1>
                     <div class="gold-line"></div>
                     <h3 class="subtitle">دليل تعليمي تفاعلي لطلاب كلية التربية</h3>
-                    <p class="author-name">تأليف وتصميم: <br> <b>GOMAA MOHAMED GOMAA</b></p>
+                    <p class="author-name">تأليف وتصميم: <br> <b>جمعة محمد جمعة سليم</b></p>
                 </div>
             </div>
 
@@ -27,14 +27,14 @@
                     <h2 class="gold-text">الفهرس</h2>
                     <ul class="index-list">
                         <li onclick="goToPage(4, event)"><i class="fas fa-bullseye"></i> <span>04</span> أهداف الدرس</li>
-                        <li onclick="goToPage(6, event)"><i class="fas fa-user"></i> <span>06</span> من هو فيثاغورث؟</li>
-                        <li onclick="goToPage(9, event)"><i class="fas fa-lightbulb"></i> <span>09</span> نص النظرية</li>
-                        <li onclick="goToPage(12, event)"><i class="fas fa-video"></i> <span>12</span> فيديو الشرح العملي</li>
-                        <li onclick="goToPage(15, event)"><i class="fas fa-calculator"></i> <span>15</span> ثلاثيات فيثاغورث</li>
+                        <li onclick="goToPage(5, event)"><i class="fas fa-user"></i> <span>05</span> من هو فيثاغورث؟</li>
+                        <li onclick="goToPage(7, event)"><i class="fas fa-lightbulb"></i> <span>07</span> نص النظرية</li>
+                        <li onclick="goToPage(11, event)"><i class="fas fa-video"></i> <span>11</span> فيديو الشرح العملي</li>
+                        <li onclick="goToPage(16, event)"><i class="fas fa-calculator"></i> <span>16</span> ثلاثيات فيثاغورث</li>
                         <li onclick="goToPage(18, event)"><i class="fas fa-tools"></i> <span>18</span> تطبيقات في الحياة</li>
-                        <li onclick="goToPage(21, event)"><i class="fas fa-gamepad"></i> <span>21</span> ألعاب تفاعلية</li>
-                        <li onclick="goToPage(24, event)"><i class="fas fa-question-circle"></i> <span>24</span> اختبار الفهم</li>
-                        <li onclick="goToPage(27, event)"><i class="fas fa-info-circle"></i> <span>27</span> عن المؤلف</li>
+                        <li onclick="goToPage(19, event)"><i class="fas fa-gamepad"></i> <span>19</span> ألعاب تفاعلية</li>
+                        <li onclick="goToPage(20, event)"><i class="fas fa-question-circle"></i> <span>20</span> اختبار الفهم</li>
+                        <li onclick="goToPage(25, event)"><i class="fas fa-info-circle"></i> <span>25</span> عن المؤلف</li>
                     </ul>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                 <div class="page-content">
                     <h2 class="gold-text">من هو فيثاغورث؟</h2>
                     <div class="image-container">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Pythagoras_bust_cropped.jpg/220px-Pythagoras_bust_cropped.jpg" alt="تمثال فيثاغورث" style="width: 150px; height: auto; border-radius: 10px; border: 2px solid #D4AF37;">
+                        <img src="images/fezaghirse.webp" alt="تمثال فيثاغورث" style="width: 150px; height: auto; border-radius: 10px; border: 2px solid #D4AF37;">
                     </div>
                     <p>فيلسوف وعالم رياضيات يوناني عاش في القرن السادس قبل الميلاد. أسس مدرسة فكرية تؤمن بأن الأرقام هي أساس كل شيء في الوجود، وأن هناك تناغماً رياضياً يحكم الكون.</p>
                 </div>
@@ -98,6 +98,26 @@
                         a&sup2; + b&sup2; = c&sup2;
                     </div>
                     <p>حيث (c) يمثل الوتر وهو أطول ضلع، و (a, b) يمثلان ضلعي الزاوية القائمة.</p>
+
+                    <div class="audio-section">
+                        <h3>التسجيلات الصوتية</h3>
+                        <p>اختَر التسجيل المناسب إذا كنت تريد حساب:</p>
+                        <div class="audio-card">
+                            <p class="audio-label">الوتر المفقود</p>
+                            <audio controls preload="none">
+                                <source src="audio/side.ogg" type="audio/ogg">
+                                متصفحك لا يدعم تشغيل الصوت.
+                            </audio>
+                        </div>
+                        <div class="audio-card">
+                            <p class="audio-label">الضلع المفقود</p>
+                            <audio controls preload="none">
+                                <source src="audio/hypotenuse.ogg" type="audio/ogg">
+                               
+                            </audio>
+                        </div>
+                       
+                    </div>
                 </div>
             </div>
 
@@ -105,6 +125,19 @@
                 <div class="page-content">
                     <h2 class="gold-text">أضلاع المثلث القائم</h2>
                     <p>الوتر (Hypotenuse): هو الضلع المقابل للزاوية 90 درجة.<br><br>الضلعان الآخران: يُعرفان بالساقين (Legs)، وهما اللذان يصنعان الزاوية القائمة.</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">كيف نحسب الوتر والضلعين</h2>
+                    <p>عند معرفة طول الضلعين القائمين a و b، يمكننا حساب طول الوتر c باستخدام المعادلة:</p>
+                    <div class="math-box">
+                        a&sup2; + b&sup2; = c&sup2;
+                    </div>
+                    <p>وإذا كنا نعرف طول الوتر وطول أحد الضلعين، فيمكننا حساب الضلع الثاني:</p>
+                    <p>إذا كان c معروفاً و a معروفاً: b = √(c&sup2; - a&sup2;)</p>
+                    <p>هذا يجعل النظرية أداة قوية لحل مسائل الحياة العملية.</p>
                 </div>
             </div>
 
@@ -162,13 +195,6 @@
 
             <div class="page">
                 <div class="page-content">
-                    <h2 class="gold-text">التطبيقات التكنولوجية</h2>
-                    <p>هل تعلم أن النظرية تُستخدم في الرسوميات ثلاثية الأبعاد (3D Graphics) في ألعاب الفيديو لحساب المسافات بين اللاعب والعناصر الأخرى؟</p>
-                </div>
-            </div>
-
-            <div class="page">
-                <div class="page-content">
                     <h2 class="gold-text">تطبيقات يومية</h2>
                     <p>تُستخدم النظرية في:<br>- الملاحة الجوية والبحرية.<br>- حساب أقصر مسار بين نقطتين.<br>- هندسة النجارة وضبط زوايا الأثاث.<br>- شراء شاشات التلفاز (يُقاس حجم الشاشة بطول الوتر).</p>
                 </div>
@@ -177,12 +203,26 @@
             <div class="page">
                 <div class="page-content">
                     <h2 class="gold-text">ألعاب تفاعلية</h2>
-                    <p>استمتع بألعاب تعليمية لتعزيز فهم النظرية!</p>
-                    <div class="game-container">
-                        <p>لعبة 1: اكتشف الثلاثيات فيثاغورث</p>
-                        <p>لعبة 2: حل المشكلات باستخدام النظرية</p>
-                        <a href="https://www.mathplayground.com/pythagoreanExplorer.html" target="_blank" class="game-link">جرب لعبة تفاعلية عبر الإنترنت</a>
-                    </div>
+                    <p>يمكن تحويل نظرية فيثاغورث إلى ألعاب تعليمية بسيطة:</p>
+                    <ul>
+                        <li>اربط ضلعين ومثلث استخدم لتعرف الوتر الصحيح.</li>
+                        <li>ألغاز رسم المربع على أضلاع مثلث قائم.</li>
+                        <li>مسابقات حسابية بين الطلاب لمعرفة قيم a و b و c.</li>
+                    </ul>
+                    <p>هذه الألعاب تساعد على ترسيخ الفكرة بطريقة مرحة وتفاعلية.</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">اختبار الفهم</h2>
+                    <p>تحقق من فهمك بهذه الأسئلة السريعة:</p>
+                    <ol>
+                        <li>إذا كان طول الضلعين 3 و4، فما طول الوتر؟</li>
+                        <li>هل يمكن أن يكون الوتر 5 عندما يكون أحد الضلعين 5 والآخر 12؟</li>
+                        <li>ما هي المعادلة التي تربط بين الأضلاع الثلاثة في المثلث القائم؟</li>
+                    </ol>
+                    <p><b>الإجابات:</b> 1) 5، 2) لا، 3) a&sup2; + b&sup2; = c&sup2;.</p>
                 </div>
             </div>
 
@@ -237,18 +277,17 @@
                     <h2 class="gold-text">النهاية</h2>
                     <div class="gold-line"></div>
                     <p>Designed with Code & Passion</p>
-                    <p class="author-name"><b>GOMAA MOHAMED GOMAA</b> &copy; 2026</p>
+                    <p class="author-name"><b>جمعه محمد جمعه سليم</b> &copy; 2026</p>
                 </div>
             </div>
         </div>
+        <div class="navigation">
+            <button id="prevPageBtn">الصفحة السابقة</button>
+            <button id="nextPageBtn">الصفحة التالية</button>
+        </div>
     </div>
 
-    <div class="fixed-controls">
-        <button onclick="prevPage(event)">الصفحة السابقة</button>
-        <button onclick="nextPage(event)">الصفحة التالية</button>
-    </div>
-
+    
     <script src="script.js"></script>
 </body>
-</html>
 </html>
