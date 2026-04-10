@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظرية فيثاغورث - دليل تعليمي تفاعلي لطلاب كلية التربية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/turn.js@4.1.0/lib/turn.min.js"></script>
+</head>
+<body>
+
+    <div class="book-wrapper">
+        <div id="flipbook">
+            <div class="hard cover">
+                <div class="page-content center-all">
+                    <h1 class="gold-text title-large">نظرية فيثاغورث</h1>
+                    <div class="gold-line"></div>
+                    <h3 class="subtitle">دليل تعليمي تفاعلي لطلاب كلية التربية</h3>
+                    <p class="author-name">تأليف وتصميم: <br> <b>GOMAA MOHAMED GOMAA</b></p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">الفهرس</h2>
+                    <ul class="index-list">
+                        <li onclick="goToPage(4, event)"><i class="fas fa-bullseye"></i> <span>04</span> أهداف الدرس</li>
+                        <li onclick="goToPage(6, event)"><i class="fas fa-user"></i> <span>06</span> من هو فيثاغورث؟</li>
+                        <li onclick="goToPage(9, event)"><i class="fas fa-lightbulb"></i> <span>09</span> نص النظرية</li>
+                        <li onclick="goToPage(12, event)"><i class="fas fa-video"></i> <span>12</span> فيديو الشرح العملي</li>
+                        <li onclick="goToPage(15, event)"><i class="fas fa-calculator"></i> <span>15</span> ثلاثيات فيثاغورث</li>
+                        <li onclick="goToPage(18, event)"><i class="fas fa-tools"></i> <span>18</span> تطبيقات في الحياة</li>
+                        <li onclick="goToPage(21, event)"><i class="fas fa-gamepad"></i> <span>21</span> ألعاب تفاعلية</li>
+                        <li onclick="goToPage(24, event)"><i class="fas fa-question-circle"></i> <span>24</span> اختبار الفهم</li>
+                        <li onclick="goToPage(27, event)"><i class="fas fa-info-circle"></i> <span>27</span> عن المؤلف</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">مقدمة</h2>
+                    <p>الهندسة ليست مجرد أرقام وأشكال، بل هي اللغة التي كُتب بها الكون. في هذا الكتاب، سنأخذك في رحلة ممتعة عبر الزمن لنتعرف على واحدة من أهم النظريات في تاريخ البشرية.</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">أهداف الدرس</h2>
+                    <ul>
+                        <li>فهم أساسيات نظرية فيثاغورث وتطبيقها.</li>
+                        <li>تعلم كيفية حساب طول الوتر في المثلث القائم.</li>
+                        <li>استكشاف التطبيقات العملية للنظرية في الحياة اليومية.</li>
+                        <li>تطوير مهارات حل المشكلات الرياضية.</li>
+                        <li>التعرف على تاريخ النظرية وأهميتها.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">من هو فيثاغورث؟</h2>
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Pythagoras_bust_cropped.jpg/220px-Pythagoras_bust_cropped.jpg" alt="تمثال فيثاغورث" style="width: 150px; height: auto; border-radius: 10px; border: 2px solid #D4AF37;">
+                    </div>
+                    <p>فيلسوف وعالم رياضيات يوناني عاش في القرن السادس قبل الميلاد. أسس مدرسة فكرية تؤمن بأن الأرقام هي أساس كل شيء في الوجود، وأن هناك تناغماً رياضياً يحكم الكون.</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">المدرسة الفيثاغورية</h2>
+                    <p>كانت مدرسته أشبه بأخوية سرية، حيث كان أتباعه يدرسون الرياضيات والموسيقى وعلم الفلك كطريق للوصول إلى الحقيقة. كانوا يعتقدون أن الكون يعزف سيمفونية رياضية.</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">نص النظرية</h2>
+                    <p>تنص النظرية على أنه: <b>"في أي مثلث قائم الزاوية، مساحة المربع المنشأ على الوتر تساوي مجموع مساحتي المربعين المنشأين على ضلعي القائمة."</b></p>
+                    <div class="shape-container">
+                        <svg width="200" height="150" viewBox="0 0 200 150">
+                            <polygon points="10,140 10,10 140,140" fill="none" stroke="#D4AF37" stroke-width="3"/>
+                            <text x="50" y="80" fill="#D4AF37" font-size="12">a</text>
+                            <text x="80" y="130" fill="#D4AF37" font-size="12">b</text>
+                            <text x="75" y="75" fill="#D4AF37" font-size="12">c</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content center-all">
+                    <h2 class="gold-text">المعادلة الرياضية</h2>
+                    <div class="math-box">
+                        a&sup2; + b&sup2; = c&sup2;
+                    </div>
+                    <p>حيث (c) يمثل الوتر وهو أطول ضلع، و (a, b) يمثلان ضلعي الزاوية القائمة.</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">أضلاع المثلث القائم</h2>
+                    <p>الوتر (Hypotenuse): هو الضلع المقابل للزاوية 90 درجة.<br><br>الضلعان الآخران: يُعرفان بالساقين (Legs)، وهما اللذان يصنعان الزاوية القائمة.</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content center-all">
+                    <h2 class="gold-text">شرح مرئي قصير</h2>
+                    <div class="video-container">
+                        <iframe width="250" height="440" src="https://www.youtube.com/embed/R7mKoJdcJkE?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a href="https://youtube.com/shorts/R7mKoJdcJkE" target="_blank" class="fallback-btn">شاهد على يوتيوب مباشرة</a>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">الإثبات الهندسي</h2>
+                    <p>هناك المئات من الإثباتات لنظرية فيثاغورث، من بينها إثباتات قدمها ألبرت أينشتاين والرئيس الأمريكي جيمس جارفيلد! أسهل إثبات هو إعادة ترتيب 4 مثلثات متطابقة داخل مربع.</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">إثباتات أخرى</h2>
+                    <p>إثبات جارفيلد: يقسم المربع إلى 4 مثلثات ومثلثين صغيرين.<br><br>إثبات أينشتاين: يستخدم الجبر والتحويلات.<br><br>هناك إثباتات باستخدام المتجهات والكسور أيضاً.</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">هل هو المكتشف الأول؟</h2>
+                    <p>رغم أن النظرية تحمل اسمه، إلا أن البابليين والهنود والصينيين القدماء استخدموا هذه القاعدة في البناء قبل ولادة فيثاغورث بأكثر من 1000 عام!</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">تاريخ النظرية</h2>
+                    <p>اكتشفت النظرية في حضارات قديمة متعددة. في الهند، وجدت في كتاب "شولبا سوترا" حوالي 800 ق.م. في الصين، استخدمها في عصر تشو (1100-771 ق.م). في بابل، استخدمت في لوحات طينية تعود لـ 1800 ق.م.</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">ثلاثيات فيثاغورث</h2>
+                    <p>هي مجموعة من 3 أعداد صحيحة تحقق المعادلة، وأشهرها:<br><br>• (3, 4, 5) -> 9 + 16 = 25<br>• (5, 12, 13) -> 25 + 144 = 169</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">فيثاغورث والعمارة</h2>
+                    <p>استخدم المصريون القدماء حبلًا به 12 عقدة بمسافات متساوية، وشكلوه على هيئة مثلث أضلاعه (3, 4, 5) للحصول على زاوية قائمة دقيقة جداً لبناء الأهرامات.</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">التطبيقات التكنولوجية</h2>
+                    <p>هل تعلم أن النظرية تُستخدم في الرسوميات ثلاثية الأبعاد (3D Graphics) في ألعاب الفيديو لحساب المسافات بين اللاعب والعناصر الأخرى؟</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">تطبيقات يومية</h2>
+                    <p>تُستخدم النظرية في:<br>- الملاحة الجوية والبحرية.<br>- حساب أقصر مسار بين نقطتين.<br>- هندسة النجارة وضبط زوايا الأثاث.<br>- شراء شاشات التلفاز (يُقاس حجم الشاشة بطول الوتر).</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">ألعاب تفاعلية</h2>
+                    <p>استمتع بألعاب تعليمية لتعزيز فهم النظرية!</p>
+                    <div class="game-container">
+                        <p>لعبة 1: اكتشف الثلاثيات فيثاغورث</p>
+                        <p>لعبة 2: حل المشكلات باستخدام النظرية</p>
+                        <a href="https://www.mathplayground.com/pythagoreanExplorer.html" target="_blank" class="game-link">جرب لعبة تفاعلية عبر الإنترنت</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">أنشطة تعليمية</h2>
+                    <p>قم بالأنشطة التالية لتعزيز التعلم:</p>
+                    <ul>
+                        <li>ارسم مثلث قائم وقيس الضلعين والوتر.</li>
+                        <li>حل مشكلة عملية باستخدام النظرية.</li>
+                        <li>ابحث عن تاريخ فيثاغورث وأهميته.</li>
+                    </ul>
+                    <p>استخدم العروض التقديمية والمرفقات للمزيد من التفاعل.</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">مثال حسابي (1)</h2>
+                    <p>إذا كان لدينا مثلث قائم، طول ضلعه الأول 6 سم، والثاني 8 سم، فما طول الوتر؟<br><br>الحل:<br>c&sup2; = 6&sup2; + 8&sup2;<br>c&sup2; = 36 + 64 = 100<br>الوتر (c) = 10 سم.</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">مثال حسابي (2)</h2>
+                    <p>سلم طوله 5 أمتار مسنود على حائط، إذا كانت قاعدة السلم تبعد 3 أمتار عن الحائط، فما هو ارتفاع الحائط؟<br><br>الحل:<br>a&sup2; = 5&sup2; - 3&sup2; = 25 - 9 = 16<br>الارتفاع = 4 أمتار.</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="gold-text">الخاتمة</h2>
+                    <p>نظرية فيثاغورث هي بوابة لعالم الرياضيات الممتع، تثبت لنا أن كل شيء في هذا الكون يمكن قياسه وفهمه إذا استخدمنا المنطق الرياضي السليم.</p>
+                    <p>استمر في التعلم والاستكشاف!</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="page-content center-all">
+                    <h2 class="gold-text">عن المؤلف</h2>
+                    <p>تم إعداد وتصميم هذا الكتاب التفاعلي بواسطة البرمجيات الحديثة كمتطلب أكاديمي، لتقديم محتوى تعليمي مبتكر.</p>
+                    <div class="author-badge">
+                        <h3>GOMAA MOHAMED GOMAA</h3>
+                        <p>طالب في كلية التربية</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hard cover">
+                <div class="page-content center-all">
+                    <h2 class="gold-text">النهاية</h2>
+                    <div class="gold-line"></div>
+                    <p>Designed with Code & Passion</p>
+                    <p class="author-name"><b>GOMAA MOHAMED GOMAA</b> &copy; 2026</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-controls">
+        <button onclick="prevPage(event)">الصفحة السابقة</button>
+        <button onclick="nextPage(event)">الصفحة التالية</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+</html>
